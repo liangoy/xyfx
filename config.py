@@ -1,0 +1,1 @@
+MONGO_STR='mongodb://mongouser:123456@192.168.2.248:27017'

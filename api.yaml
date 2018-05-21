@@ -1,0 +1,26 @@
+swagger: '2.0'
+info:
+  title: xyfx
+  version: '0.1'
+consumes:
+  - application/json
+  - multipart/form-data
+produces:
+  - application/json
+paths:
+  /sms_score_updater:
+    post:
+      tags:
+        - sms_score_updater
+      summary: sms_score_updater
+      operationId: handler.sms_anl.update_sms_score
+      parameters:
+        - name: pid
+          type: string
+          in: query
+          description: '个人id'
+      responses:
+        '200':
+          description: return
+          schema:
+            type: object
